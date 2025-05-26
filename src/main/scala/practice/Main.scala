@@ -2,6 +2,7 @@ package practice
 
 import p1threads.{Account, Message, ProducerConsumer, ThreadSafeCollection}
 import practice.p1threads.Practice1.{execute, runThreads, work}
+import practice.p2parallels.Parallels.countNonEmpty
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -50,5 +51,8 @@ object Main {
     //    message.create(14)
     //    message.read();
     //--------------------------------------------------------------------------------
+    val input: Seq[String] = List("L", "o", "r", "e", "m", "", "i", "p", "s", "u", "m", "", "d", "o", "l", "o", "r", "", "s", "i", "t", "", "a", "m", "e", "t")
+
+    println(countNonEmpty(input))
   }
 }
